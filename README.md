@@ -17,5 +17,7 @@ samtools view -H in.bam | grep @SQ | awk '{print $2"\t"$3}' | sed 's/SN://g' | s
 
 ###################################################################################################################
                                              RUNNING
+                                             
+                                             
 python makeBedGraphToBigWig.py --b in.bdg --c chromSize.txt --o out.bw                                             
                                              
